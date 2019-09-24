@@ -18,8 +18,8 @@ class School
   end
 
   def sort
-    @roster.collect do |key, value|
-      value.sort.flatten
+    @roster.each do |key, value|
+      key => value.sort
     end
   end
 
